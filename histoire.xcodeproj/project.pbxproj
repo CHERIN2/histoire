@@ -14,7 +14,7 @@
 		1B4D5B7E2ADD5EE200961462 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D5B7D2ADD5EE200961462 /* Persistence.swift */; };
 		1B4D5B812ADD5EE200961462 /* histoire.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D5B7F2ADD5EE200961462 /* histoire.xcdatamodeld */; };
 		1B4D5B8A2ADD61C300961462 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D5B892ADD61C300961462 /* Tab.swift */; };
-		1B4D5B8C2ADD666A00961462 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D5B8B2ADD666A00961462 /* Feed.swift */; };
+		1B4D5B8C2ADD666A00961462 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D5B8B2ADD666A00961462 /* TabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,7 @@
 		1B4D5B7D2ADD5EE200961462 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		1B4D5B802ADD5EE200961462 /* histoire.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = histoire.xcdatamodel; sourceTree = "<group>"; };
 		1B4D5B892ADD61C300961462 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
-		1B4D5B8B2ADD666A00961462 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		1B4D5B8B2ADD666A00961462 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 		1B4D5B882ADD61B000961462 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1B4D5B8B2ADD666A00961462 /* Feed.swift */,
+				1B4D5B8B2ADD666A00961462 /* TabView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B4D5B812ADD5EE200961462 /* histoire.xcdatamodeld in Sources */,
-				1B4D5B8C2ADD666A00961462 /* Feed.swift in Sources */,
+				1B4D5B8C2ADD666A00961462 /* TabView.swift in Sources */,
 				1B4D5B7E2ADD5EE200961462 /* Persistence.swift in Sources */,
 				1B4D5B8A2ADD61C300961462 /* Tab.swift in Sources */,
 				1B4D5B772ADD5EE100961462 /* ContentView.swift in Sources */,

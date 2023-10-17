@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct Feed: View {
+struct TabbarView: View {
     //MARK: - View Properties
     @State private var activeTab: Tab = .feed
     

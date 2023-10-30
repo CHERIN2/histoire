@@ -22,6 +22,10 @@ enum Tab: String, CaseIterable {
             return "Profiles"
         }
     }
+    
+    var index: Int {
+        return Tab.allCases.firstIndex(of: self) ?? 0
+    }
 }
 
 

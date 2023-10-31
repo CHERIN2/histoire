@@ -18,13 +18,8 @@ struct TabbarView: View {
     var body: some View {
         VStack(spacing: 0) {
             TabView(selection: $activeTab) {
-                
-                FeedView()
-                    .tabItem {
-                        Text("Feed")
-                            .tag(Tab.feed)
-                    }
-                ChetView()
+
+                ChatView()
                     .tabItem {
                         Text("Chat")
                             .tag(Tab.chat)
@@ -36,11 +31,11 @@ struct TabbarView: View {
                             .tag(Tab.home)
                     }
                 
-                Text("Notifications")
-                    .tag(Tab.notifications)
-                
-                Text("ProFiles")
-                    .tag(Tab.profiles)
+                ProfileView()
+                    .tabItem {
+                        Text("ProFiles")
+                            .tag(Tab.profiles)
+                    }
             }
             CustomTabBar()
         }

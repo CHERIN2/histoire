@@ -4,7 +4,10 @@ import SwiftUI
 struct histoireApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabbarView()
+            ChatView()
+            HomeView()
+            ProfileView()
         }
     }
 }

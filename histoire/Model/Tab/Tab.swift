@@ -4,7 +4,7 @@ import SwiftUI
 enum Tab: String, CaseIterable {
     case chat = "bubble.left.and.text.bubble.right"
     case home = "house"
-    case profiles = "person.2.crop.square.stack.fill"
+    case profiles = "person.crop.circle"
     
     var title: String {
         switch self {

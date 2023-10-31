@@ -18,7 +18,8 @@ struct TabbarView: View {
     var body: some View {
         VStack(spacing: 0) {
             TabView(selection: $activeTab) {
-                ChetView()
+
+                ChatView()
                     .tabItem {
                         Text("Chat")
                             .tag(Tab.chat)

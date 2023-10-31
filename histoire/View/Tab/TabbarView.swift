@@ -2,7 +2,7 @@ import SwiftUI
 
 struct TabbarView: View {
     //MARK: - View Properties
-    @State private var activeTab: Tab = .feed
+    @State private var activeTab: Tab = .home
     @Namespace private var animation
     @State private var tabShapePosition: CGPoint = .zero
     init() {

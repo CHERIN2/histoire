@@ -15,24 +15,30 @@ struct TabbarView: View {
         return .init(tab: tab)
     }
     
-    //MARK: - Bounce Property
-    @State private var bouncesDown: Bool = false
-    
     var body: some View {
         VStack(spacing: 0) {
             TabView(selection: $activeTab) {
-                Text("Feed")
-                    .tag(Tab.feed)
                 
-                Text("Chat")
-                    .tag(Tab.chat)
+                FeedView()
+                    .tabItem {
+                        Text("Feed")
+                            .tag(Tab.feed)
+                    }
+                ChetView()
+                    .tabItem {
+                        Text("Chat")
+                            .tag(Tab.chat)
+                    }
                 
-                Text("Home")
-                    .tag(Tab.home)
-                    
+                HomeView()
+                    .tabItem {
+                        Text("Home")
+                            .tag(Tab.home)
+                    }
+                
                 Text("Notifications")
                     .tag(Tab.notifications)
-                    
+                
                 Text("ProFiles")
                     .tag(Tab.profiles)
             }
@@ -60,7 +66,7 @@ struct TabbarView: View {
             TabShape(midPoint: tabShapePosition.x)
                 .fill(.white)
                 .ignoresSafeArea()
-                //MARK: - add blur + shadow
+            //MARK: - add blur + shadow
                 .shadow(color: tint.opacity(0.2), radius: 5, x: 0, y: -5)
                 .blur(radius: 2)
                 .padding(.top, 25)
@@ -68,46 +74,6 @@ struct TabbarView: View {
         })
         //MARK: - Tab Animation
         .animation(.interactiveSpring(response: 0.6, dampingFraction: 0.7, blendDuration: 0.7), value: activeTab)
-    }
-    
-    //MARK: - Bouncing Tab Bar
-    func bounceTabBar() -> some View {
-        HStack(spacing: 0) {
-            ForEach($allTabs) { $animatedTab in
-                let tab = animatedTab.tab
-                
-                VStack(spacing: 4) {
-                    Image(systemName: tab.rawValue)
-                        .font(.title2)
-                        .symbolEffect(.bounce.up.byLayer, value: animatedTab.isAnimateing)
-                    
-                    Text(tab.title)
-                        .font(.caption2)
-                        .textScale(.secondary)
-                }
-                .frame(maxWidth: .infinity)
-                .foregroundStyle(activeTab == tab ? Color.primary : Color.gray.opacity(0.8))
-                .padding(.top, 15)
-                .padding(.bottom, 10)
-                .contentShape(.rect)
-                
-                //MARK: - use Button
-                .onTapGesture {
-                    withAnimation(.bouncy, completionCriteria: .logicallyComplete, {
-                        activeTab = tab
-                        animatedTab.isAnimateing = true
-                    }, completion: {
-                        var trasnaction = Transaction()
-                        trasnaction.disablesAnimations = true
-                        withTransaction(trasnaction) {
-                            animatedTab.isAnimateing = nil
-                        }
-                    })
-                    activeTab = tab
-                }
-            }
-        }
-        .background(.bar)
     }
 }
 

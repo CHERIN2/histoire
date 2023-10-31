@@ -14,7 +14,9 @@
 		1B4D5B7E2ADD5EE200961462 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D5B7D2ADD5EE200961462 /* Persistence.swift */; };
 		1B4D5B812ADD5EE200961462 /* histoire.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D5B7F2ADD5EE200961462 /* histoire.xcdatamodeld */; };
 		1B4D5B8A2ADD61C300961462 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D5B892ADD61C300961462 /* Tab.swift */; };
-		1B4D5B8C2ADD666A00961462 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D5B8B2ADD666A00961462 /* TabView.swift */; };
+		1B4D5B8C2ADD666A00961462 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D5B8B2ADD666A00961462 /* TabbarView.swift */; };
+		1B90839D2AEFE5E100BD242E /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90839C2AEFE5E100BD242E /* TabShape.swift */; };
+		1B90839F2AEFE94400BD242E /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90839E2AEFE94400BD242E /* TabPosition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +28,9 @@
 		1B4D5B7D2ADD5EE200961462 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		1B4D5B802ADD5EE200961462 /* histoire.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = histoire.xcdatamodel; sourceTree = "<group>"; };
 		1B4D5B892ADD61C300961462 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
-		1B4D5B8B2ADD666A00961462 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		1B4D5B8B2ADD666A00961462 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		1B90839C2AEFE5E100BD242E /* TabShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabShape.swift; sourceTree = "<group>"; };
+		1B90839E2AEFE94400BD242E /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +63,8 @@
 		1B4D5B732ADD5EE100961462 /* histoire */ = {
 			isa = PBXGroup;
 			children = (
-				1B4D5B882ADD61B000961462 /* View */,
 				1B4D5B872ADD619B00961462 /* Model */,
+				1B4D5B882ADD61B000961462 /* View */,
 				1B4D5B742ADD5EE100961462 /* histoireApp.swift */,
 				1B4D5B762ADD5EE100961462 /* ContentView.swift */,
 				1B4D5B7D2ADD5EE200961462 /* Persistence.swift */,
@@ -82,7 +86,7 @@
 		1B4D5B872ADD619B00961462 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1B4D5B892ADD61C300961462 /* Tab.swift */,
+				1B9083A32AEFF5BE00BD242E /* Tab */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,9 +94,27 @@
 		1B4D5B882ADD61B000961462 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1B4D5B8B2ADD666A00961462 /* TabView.swift */,
+				1B9083A02AEFF59300BD242E /* Tab */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1B9083A02AEFF59300BD242E /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				1B90839E2AEFE94400BD242E /* TabPosition.swift */,
+				1B90839C2AEFE5E100BD242E /* TabShape.swift */,
+				1B4D5B8B2ADD666A00961462 /* TabbarView.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		1B9083A32AEFF5BE00BD242E /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				1B4D5B892ADD61C300961462 /* Tab.swift */,
+			);
+			path = Tab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,12 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B90839F2AEFE94400BD242E /* TabPosition.swift in Sources */,
 				1B4D5B812ADD5EE200961462 /* histoire.xcdatamodeld in Sources */,
-				1B4D5B8C2ADD666A00961462 /* TabView.swift in Sources */,
+				1B4D5B8C2ADD666A00961462 /* TabbarView.swift in Sources */,
 				1B4D5B7E2ADD5EE200961462 /* Persistence.swift in Sources */,
 				1B4D5B8A2ADD61C300961462 /* Tab.swift in Sources */,
 				1B4D5B772ADD5EE100961462 /* ContentView.swift in Sources */,
 				1B4D5B752ADD5EE100961462 /* histoireApp.swift in Sources */,
+				1B90839D2AEFE5E100BD242E /* TabShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"histoire/Preview Content\"";
+				DEVELOPMENT_TEAM = 48CD968PJK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -332,6 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"histoire/Preview Content\"";
+				DEVELOPMENT_TEAM = 48CD968PJK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

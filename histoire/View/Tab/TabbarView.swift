@@ -54,13 +54,10 @@ struct TabbarView: View {
                     Image(systemName: tab.rawValue)
                         .font(.title2)
                         .symbolEffect(.bounce.up.byLayer, value: animatedTab.isAnimateing)
-                    
-                    Text(tab.title)
-                        .font(.caption2)
-                        .textScale(.secondary)
                 }
+                
                 .frame(maxWidth: .infinity)
-                .foregroundStyle(activeTab == tab ? Color.pink : Color.gray.opacity(0.7))
+                .foregroundStyle(activeTab == tab ? Color.pink : Color.gray.opacity(0.8))
                 .padding(.top, 15)
                 .padding(.bottom, 10)
                 .contentShape(.rect)

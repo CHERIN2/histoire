@@ -29,3 +29,4 @@ struct AnimatedTab: Identifiable {
     var tab: Tab
     var isAnimateing: Bool?
 }
+

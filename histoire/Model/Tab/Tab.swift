@@ -2,16 +2,19 @@ import SwiftUI
 
 //MARK: - Tab's
 enum Tab: String, CaseIterable {
+    case feed = "list.bullet.indent"
+    case book = "book.pages"
     case chat = "bubble.left.and.text.bubble.right"
-    case home = "house"
     case profiles = "person.crop.circle"
     
     var title: String {
         switch self {
+        case .feed:
+            return "Feed"
+        case .book:
+            return "Book"
         case .chat:
             return "Chat"
-        case .home:
-            return "home"
         case .profiles:
             return "Profiles"
         }

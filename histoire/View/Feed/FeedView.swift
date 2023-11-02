@@ -1,8 +1,8 @@
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
-        TabbarView()
+        Text("Hello, Home!")
     }
 }
 

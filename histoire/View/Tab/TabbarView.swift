@@ -2,7 +2,7 @@ import SwiftUI
 
 struct TabbarView: View {
     //MARK: - View Properties
-    @State private var activeTab: Tab = .home
+    @State private var activeTab: Tab = .feed
     
     //MARK: - All Tab's
     @State private var allTabs: [AnimatedTab] = Tab.allCases.compactMap { tab -> AnimatedTab? in
@@ -18,22 +18,25 @@ struct TabbarView: View {
                 
                 //MARK: - chat views
                 NavigationStack {
-                    ChatView()
-                    .navigationTitle(Tab.chat.title)
+                    FeedView()
                 }
-                .setUpTab(.chat)
+                .setUpTab(.feed)
                 
                 //MARK: - home views
                 NavigationStack {
-                    HomeView()
-                    .navigationTitle(Tab.home.title)
+                    BookView()
                 }
-                .setUpTab(.home)
+                .setUpTab(.book)
+                
+                //MARK: - home views
+                NavigationStack {
+                    ChatView()
+                }
+                .setUpTab(.chat)
                 
                 //MARK: - profiles views
                 NavigationStack {
                     ProfileView()
-                    .navigationTitle(Tab.profiles.title)
                 }
                 .setUpTab(.profiles)
             }
@@ -57,7 +60,7 @@ struct TabbarView: View {
                         .textScale(.secondary)
                 }
                 .frame(maxWidth: .infinity)
-                .foregroundStyle(activeTab == tab ? Color.primary : Color.gray.opacity(0.8))
+                .foregroundStyle(activeTab == tab ? Color.pink : Color.gray.opacity(0.7))
                 .padding(.top, 15)
                 .padding(.bottom, 10)
                 .contentShape(.rect)
@@ -74,7 +77,7 @@ struct TabbarView: View {
                             animatedTab.isAnimateing = nil
                         }
                     })
-                    activeTab = tab
+                    
                 }
             }
         }

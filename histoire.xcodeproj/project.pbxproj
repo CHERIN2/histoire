@@ -147,7 +147,6 @@
 			path = Tab;
 			sourceTree = "<group>";
 		};
-
 		1BBCA58D2AF3C9FF00B04C5D /* Book */ = {
 			isa = PBXGroup;
 			children = (

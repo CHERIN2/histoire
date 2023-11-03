@@ -151,6 +151,10 @@
 			isa = PBXGroup;
 			children = (
 				1BBCA58F2AF3CA1800B04C5D /* BookView.swift */,
+		1B9083A02AEFF59300BD242E /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				1B4D5B8B2ADD666A00961462 /* TabbarView.swift */,
 			);
 			path = Book;
 			sourceTree = "<group>";

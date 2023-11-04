@@ -14,5 +14,5 @@ struct BookView: View {
 }
 
 #Preview {
-    BookView()
+    ContentView()
 }

@@ -8,7 +8,7 @@ struct ProfileView: View {
     
     var body: some View {
         VStack {
-            Text("Hello, Profiles")
+            Text("Hello, Profile!")
             
             PhotosPicker (
                 selection: $selectedItem,

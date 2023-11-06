@@ -1,8 +1,8 @@
 import SwiftUI
 
-struct HomeView: View {
+struct FeedView: View {
     var body: some View {
-        Text("Hello, Home!")
+        Text("Hello, Feed!")
     }
 }
 

@@ -190,7 +190,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1B7125D22AF8ED0B00E8C3B2 /* Build configuration list for PBXProject "Histoire" */;
+			buildConfigurationList = 1B7125D22AF8ED0B00E8C3B2 /* Build configuration list for PBXProject "histoire" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -368,6 +368,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Histoire/Preview Content\"";
+				DEVELOPMENT_TEAM = 48CD968PJK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -396,6 +397,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Histoire/Preview Content\"";
+				DEVELOPMENT_TEAM = 48CD968PJK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -419,7 +421,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B7125D22AF8ED0B00E8C3B2 /* Build configuration list for PBXProject "Histoire" */ = {
+		1B7125D22AF8ED0B00E8C3B2 /* Build configuration list for PBXProject "histoire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B7125E82AF8ED0D00E8C3B2 /* Debug */,

@@ -1,10 +1,3 @@
-//
-//  BookView.swift
-//  histoire
-//
-//  Created by 체린 on 11/2/23.
-//
-
 import SwiftUI
 
 struct BookView: View {

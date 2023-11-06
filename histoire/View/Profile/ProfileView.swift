@@ -40,4 +40,3 @@ struct ProfileView: View {
 #Preview {
     ContentView()
 }
-

@@ -1,3 +1,10 @@
+//
+//  Persistence.swift
+//  Histoire
+//
+//  Created by 체린 on 11/6/23.
+//
+
 import CoreData
 
 struct PersistenceController {
@@ -24,7 +31,7 @@ struct PersistenceController {
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "histoire")
+        container = NSPersistentContainer(name: "Histoire")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }

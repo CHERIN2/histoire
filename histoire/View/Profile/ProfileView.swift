@@ -8,7 +8,9 @@ struct ProfileView: View {
     
     var body: some View {
         VStack {
-            Text("Hello, Profile!")
+            PHeaderView()
+            
+            Spacer()
             
             PhotosPicker (
                 selection: $selectedItem,
@@ -18,6 +20,7 @@ struct ProfileView: View {
                         .font(.title)
                         .frame(width: 40, height: 40)
                 }
+            
                 .onChange(of: selectedItem) { newItem in
                     Task {
                         if let data = try? await newItem?.loadTransferable(type: Data.self) {
@@ -25,6 +28,7 @@ struct ProfileView: View {
                         }
                     }
                 }
+            
             if let selectedImageData,
                let uiImage = UIImage(data: selectedImageData) {
                 Image(uiImage: uiImage)
@@ -33,6 +37,7 @@ struct ProfileView: View {
                     .frame(width: 150, height: 150)
                     .clipShape(Circle().inset(by: 30))
             }
+            Spacer()
         }
     }
 }

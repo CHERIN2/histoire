@@ -5,13 +5,19 @@ struct BookView: View {
     private var book = Book()
     
     var body: some View {
-        Text("Hello, Book!")
+        
+        BHeaderView()
+        
+        Spacer()
+        
         Button("start") {
             book.onLiveActivity()
         }
         Button("stop") {
             book.offLiveActivity()
         }
+        
+        Spacer()
     }
 }
 
